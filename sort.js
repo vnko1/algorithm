@@ -62,8 +62,16 @@ const numbers = [5, 3, 8, 4, 2];
 // console.log(selectionSort(numbers));
 
 // * Quick sort
-function quickSort(arr) {
-  const cArr = [...arr];
-}
+// function quickSort(arr) {
+//   const cArr = [...arr];
+//   if (arr.length <= 1) return cArr;
 
-console.log(quickSort(numbers));
+//   const pivot = arr[Math.floor(arr.length / 2)];
+//   const left = arr.filter((x) => x < pivot);
+//   const middle = arr.filter((x) => x === pivot);
+//   const right = arr.filter((x) => x > pivot);
+
+//   return [...quickSort(left), ...middle, ...quickSort(right)];
+// }
+
+// console.log(quickSort(numbers));
