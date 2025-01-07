@@ -1,42 +1,69 @@
+const numbers = [5, 3, 8, 4, 2];
+
 //* Bubble Sorting
 
-// function bubbleSorting(arr) {
-//   const n = arr.length;
+// function bubbleSort(arr) {
+//   const cArr = [...arr];
+//   const n = cArr.length;
 
 //   for (let i = 0; i < n - 1; i++) {
 //     for (let j = 0; j < n - i - 1; j++) {
-//       if (arr[j] < arr[j + 1]) {
-//         // const temp = arr[j];
-//         // arr[j] = arr[j + 1];
-//         // arr[j + 1] = temp;
-//         [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+//       if (cArr[j] > cArr[j + 1]) {
+//         // const temp = cArr[j];
+//         // cArr[j] = cArr[j + 1];
+//         // cArr[j + 1] = temp;
+//         [cArr[j], cArr[j + 1]] = [cArr[j + 1], cArr[j]];
 //       }
 //     }
 //   }
-//   return arr;
+//   return cArr;
 // }
 
-// const numbers = [5, 3, 8, 4, 2];
-
-// console.log(bubbleSorting(numbers));
+// console.log(bubbleSort(numbers));
 
 //* Insertion sorting
 
-function insertSorting(arr) {
-  const n = arr.length;
-  for (let i = 0; i < n; i++) {
-    let key = arr[i]; // 1=3
-    let j = i - 1; // 1=0
+// function insertSort(arr) {
+//   const cArr = [...arr];
+//   const n = cArr.length;
+//   for (let i = 0; i < n; i++) {
+//     let key = cArr[i];
+//     let j = i - 1;
 
-    while (j >= 0 && key < arr[j]) {
-      arr[j + 1] = arr[j];
-      j -= 1;
-    }
+//     while (j >= 0 && key < arr[j]) {
+//       cArr[j + 1] = cArr[j];
+//       j -= 1;
+//     }
 
-    arr[j + 1] = key;
-  }
+//     cArr[j + 1] = key;
+//   }
+//   return cArr;
+// }
+
+// console.log(insertSort(numbers));
+
+// * Selection sort
+// function selectionSort(arr) {
+//   const cArr = [...arr];
+//   const n = cArr.length;
+//   for (let i = 0; i < n; i++) {
+//     let minIdx = i;
+
+//     for (let j = i + 1; j < n; j++) {
+//       if (cArr[j] < cArr[minIdx]) {
+//         minIdx = j;
+//       }
+//     }
+//     [cArr[i], cArr[minIdx]] = [cArr[minIdx], cArr[i]];
+//   }
+//   return cArr;
+// }
+
+// console.log(selectionSort(numbers));
+
+// * Quick sort
+function quickSort(arr) {
+  const cArr = [...arr];
 }
 
-const numbers = [5, 3, 8, 4, 2];
-insertSorting(numbers);
-console.log(numbers);
+console.log(quickSort(numbers));
