@@ -12,6 +12,6 @@
 // function count(n) {
 //   if (n <= 1) return n;
 
-//   return count(n - 1, memo) + count(n - 2, memo);
+//   return count(n - 1) + count(n - 2);
 // }
 // console.log(count(50));
